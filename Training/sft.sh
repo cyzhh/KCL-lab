@@ -1,0 +1,1 @@
+deepspeed --num_gpus=8 --master_port=25636 train.py --train_args_file /data/cyz/Firefly/train_args/sft/full/qwen-7b-sft-full.json

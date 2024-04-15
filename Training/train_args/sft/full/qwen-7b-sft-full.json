@@ -1,0 +1,33 @@
+{
+    "output_dir": "output/mistral-sft-1",
+    "model_name_or_path": "/data/cyz/Firefly/output/test",
+    "deepspeed": "./train_args/ds_z2_config.json",
+    "train_file": "/root/cyz/Firefly/data/3090/v3_tool.jsonl",
+    "template_name": "qwen",
+    "train_mode": "full",
+    "num_train_epochs": 1,
+    "per_device_train_batch_size": 4,
+    "gradient_accumulation_steps": 4,
+    "learning_rate": 3.2e-6,
+    "max_seq_length": 2048,
+    "logging_steps": 10,
+    "save_steps": 100,
+    "save_total_limit": 1,
+    "lr_scheduler_type": "cosine",
+    "warmup_ratio": 0.03,
+
+    "gradient_checkpointing": true,
+    "disable_tqdm": false,
+    "optim": "adamw_hf",
+    "seed": 42,
+    "bf16": true,
+    "report_to": "wandb",
+    "dataloader_num_workers": 0,
+    "save_strategy": "steps",
+    "weight_decay": 0,
+    "max_grad_norm": 1.0,
+    "remove_unused_columns": false
+}
+
+
+

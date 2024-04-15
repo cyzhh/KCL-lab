@@ -1,0 +1,49 @@
+{
+    "gradient_accumulation_steps": "auto",
+      "gradient_clipping": "auto",
+      "steps_per_print": 200,
+      "train_batch_size": "auto",
+      "train_micro_batch_size_per_gpu": "auto",
+      "wall_clock_breakdown": false,
+  
+    "optimizer": {
+          "type": "Adam",
+          "params": {
+              "lr": "auto",
+              "betas": "auto",
+              "eps": "auto",
+              "weight_decay": "auto"
+          }
+      },
+    "bf16": {
+          "enabled": true
+      },
+      "zero_optimization": {
+        "stage": 2,
+        "offload_optimizer": {
+            "device": "cpu",
+            "pin_memory": true
+        },
+        "allgather_partitions": true,
+        "allgather_bucket_size": 5e8,
+        "overlap_comm": false,
+        "reduce_scatter": true,
+        "reduce_bucket_size": 5e8,
+        "contiguous_gradients" : true
+      },
+    "scheduler": {
+          "type": "WarmupLR",
+          "params": {
+              "warmup_min_lr": "auto",
+              "warmup_max_lr": "auto",
+              "warmup_num_steps": "auto"
+          }
+      },
+    "monitoring_module": {
+        "wandb": {
+          "enabled": true,
+          "project_name": "Baichuan_multi_round",
+          "api_key": "15378b8f33f6271af1602a2b13f4aed02bedafe0"
+        }
+      }
+  }
