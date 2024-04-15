@@ -6,6 +6,6 @@
   <img src="./images/海报.png" width="1000" />
 </p>
 
-## Acknowledge
+## 😇 Acknowledge
 
   https://github.com/yangjianxin1/Firefly
