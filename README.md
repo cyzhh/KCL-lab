@@ -6,6 +6,12 @@
   <img src="./images/海报.png" width="1000" />
 </p>
 
+## Achievements
+
+### AI4Math
+
+  https://github.com/cyzhh/MMOS 
+
 ## 😇 Acknowledge
 
   https://github.com/yangjianxin1/Firefly
