@@ -8,8 +8,9 @@
 
 ## Achievements
 
-### AI4Math
-
+  https://github.com/zhouyilab/SHAPE
+  https://github.com/lihong2303/AGM_ICCV2023
+  https://github.com/whyNLP/Conic10K
   https://github.com/cyzhh/MMOS 
 
 ## 😇 Acknowledge
